@@ -1,0 +1,30 @@
+<div class ="container">
+    <h1 style ="text-align:center"><strong> Quotes that Inspire</strong></h1>
+    <hr>
+    <div class="well">
+    <div class = "jumbotron">
+      <app-quote-form (addQuote)="addnewQuote($event)"></app-quote-form>
+    </div> 
+    <div class="card-styles">  
+      <div *ngFor='let quote of quotes; let i=index'> 
+          <div class= "card"> 
+            <div class = card-header>   
+                <div><i class="fas fa-quote-left leftvote"> </i>{{quote.message}}<i class="fas fa-quote-right rightvote"></i></div>
+            </div>
+            <div class = "card-body">        
+                <div class= "votebtn" style="text-align:right">
+                <button class = "btn" (click) = upvote(i)> <i class="fas fa-thumbs-up"></i> </button>
+                <button class = "btn" (click) = downvote(i)> <i class="fas fa-thumbs-down"></i> </button>
+              
+                <div class="daterange">Submitted {{quote.inputDate|dateCount}} days ago</div>  
+                </div> 
+                <button class = "btn btn-info" (click) = revealDetails(i)> More Details </button>
+                <br>
+                <br>
+                <app-quote-details *ngIf="quote.showDetails"[quote] = 'quote' (isComplete)='delQuote($event,i)'></app-quote-details>
+            </div>     
+          </div>
+        </div>   
+    </div>
+    </div>
+  </div>

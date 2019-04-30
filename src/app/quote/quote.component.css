@@ -1,0 +1,34 @@
+.container1{
+    padding: 3%;
+}
+h1{
+    background-color: darkorchid;
+    border: 1px solid #7777;
+    text-decoration-line: underline;
+}
+.well {
+    padding: 2%;
+}
+h1{
+    background-color: rgb(70, 190, 194);
+    border: 1px solid #777;
+    text-decoration-line: underline;
+}
+.jumbotron {
+    padding-bottom: 0%;
+    
+}
+.leftvote {
+    margin-right: 2%;
+}
+.rightvote {
+    margin-left: 2%;
+}
+.card{
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    float: left;
+    width: 35%;
+}
