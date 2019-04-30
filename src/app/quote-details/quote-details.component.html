@@ -1,18 +1,9 @@
-<div class="detailsextra">
-  <p>
-    submitted by:{{qoute.name}}
-  </p>
-  <p>
-    Author:{{qoute.author}}
-  </p>
-  <p>
-    Upvotes:{{qoute.upvotes}}
-  </p>
-  <p>
-    Downvotes:{{qoute.downvotes}}
-  </p>
-  
-  <button class="btn btn-danger"(click) = 'delQuote()'>Delete Quote</button>
+<div class="detailsextra"> 
+    <p>published by: {{quote.name}}</p>
+    <p>Authored by: {{quote.author}}</p>
+    <p>Upvotes: {{quote.Upvotes}}</p>
+    <p>Downvotes: {{quote.Downvotes}}</p>
+ <button class="btn btn-danger"(click) = "delQuote(true)">Delete Quote</button>
   <br>
   <br>
 </div>
